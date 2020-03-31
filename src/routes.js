@@ -6,11 +6,11 @@ const routes = new Router();
 routes.get('/', async (req, res) => {
   const user = await User.create({
     name: 'Deivid Nascimento',
-    email: 'teste@test.com',
+    email: 'tdedete@test.com',
     password_hash: 'hjauhgsiagsiags',
   });
 
-  return res.json(user)
+  return res.json(user);
 });
 
 export default routes;
